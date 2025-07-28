@@ -9,6 +9,7 @@ This project was created as part of the Udemy course:
 
 ```bash
 npm install
+npm install react-router-dom
 ```
 
 2. Run App
