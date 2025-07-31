@@ -31,7 +31,10 @@ const router = createBrowserRouter(
     },
   ],
   {
-    basename: '/01-starting-project-7', // ✅ GitHub Pages repo name
+    basename:
+      process.env.NODE_ENV === 'production'
+        ? '/01-starting-project-7'
+        : '/',
   }
 );
 // const router = createBrowserRouter(routeDefinitions);
