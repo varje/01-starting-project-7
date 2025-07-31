@@ -3,7 +3,10 @@
 This project was created as part of the Udemy course:  
 **React – The Complete Guide 2025 (incl. Next.js, Redux)** by Maximilian Schwarzmüller.
 
-## Getting Started
+## Access by web:
+[varje.github.io/01-starting-project-07]([https://website-name.com](https://varje.github.io/01-starting-project-7/))
+
+## Getting Started locally
 
 1. Install dependencies:
 
