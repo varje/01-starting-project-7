@@ -17,18 +17,23 @@ import ProductDetailPage from './pages/ProductDetail';
 //   </Route>
 // )
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: '/',
+      element: <RootLayout />,
+      errorElement: <ErrorPage />,
+      children: [
+        { index: true, element: <HomePage /> },
+        { path: '/products', element: <ProductsPage /> },
+        { path: '/products/:productId', element: <ProductDetailPage /> },
+      ],
+    },
+  ],
   {
-    path: '/',
-    element: <RootLayout />,
-    errorElement: <ErrorPage />,
-    children: [
-      { index: true, element: <HomePage /> },
-      { path: '/products', element: <ProductsPage /> },
-      { path: '/products/:productId', element: <ProductDetailPage /> },
-    ],
-  },
-]);
+    basename: '/01-starting-project-7', // ✅ GitHub Pages repo name
+  }
+);
 // const router = createBrowserRouter(routeDefinitions);
 
 function App() {
